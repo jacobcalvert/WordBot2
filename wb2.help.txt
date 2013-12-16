@@ -1,0 +1,26 @@
+-------------WORDBOT HELP-------------
+[About]
+ Wordbot passively monitors the words in
+ a chat room and keeps a log of them.
+ Pretty useless, other than it makes
+ for interesting data.
+
+[Config]
+ The config is in a json format. Required
+ variables to set are irc_port, irc_ip, 
+ word_len_lim , chat_room, db-name,
+ db-type, and sort_len.
+ The only other thing to config is the
+ banned.txt. It is a newline separated
+ list of regex terms wordbot should ignore. 
+
+[Commands]
+ helpme			- displays this help file
+ version 		- displays version
+ view * 		- displays the selected option from [stack,users,db,log,status] *WARNING showing the db could take a while
+ flush db		- flushes the db to the disk
+ read config		- re read the config (used for updating banned.txt without restarting the server.)
+ list			- lists available commands
+ revisions		- shows the revision history of WordBot
+ * realtime		- [command] realtime will show a realtime update of the command. The 'view db' command is not supported here.
+			  This may be particularly useful for 'view stack realtime','view users realtime','view status realtime'

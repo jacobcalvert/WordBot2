@@ -1,0 +1,28 @@
+Developing a web interface for WB2
+
+Wordbot communicates using WebSockets. When a client connects, a User object is instantiated
+and is put into an array of users. When the WS is closed, that object is destoyed and removed. 
+The WS expects data in a valid JSON format. Currently supported operations are sorting, and fetching.
+You do this via a JSON request in this format:
+
+{
+"request":REQ_TYPE
+}
+
+Where REQ_TYPE can be one of the following "A-Z","Z-A","ASC",or "DESC" for sorting or it can be another 
+JSON object like
+
+{
+"fetch":[a,b]
+}
+
+where a,b are positive integers. A call like 
+
+{
+"request":
+	{
+	"fetch":[1,15]
+	}
+}
+
+will return the indices 1-15 (which correlate to entries 2-16; it is a zero based index)

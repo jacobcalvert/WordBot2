@@ -1,0 +1,17 @@
+<html>
+<head>
+	<title>Wordbot 2.0.8</title>
+    <link href='style.css' type='text/css' rel='stylesheet'/>
+    <script type='text/javascript' src='jquery.js'></script>
+    <script type='text/javascript' src='stream.js'></script>
+</head>
+<body>
+    <div id="header">
+        <div id="head_bar">Wordbot 2.0.8</div>
+        <div id="tool_bar"><input class="tools" type="button" id="desc" value = "Sort Descending"/><input class="tools" type="button" id="asc" value = "Sort Ascending"/><input class="tools" type="button" id="all" value = "View All"/></div>
+    </div>
+    <div id="results">
+    </div>
+ 
+</body>
+</html>

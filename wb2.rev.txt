@@ -1,0 +1,16 @@
+********** Revision History **********
+
+Rev 1.0 	- Inital wordbot (kinda sucked, lots of exploitable bugs)
+Rev 2.0.0	- Wordbot 2 is created, proper commenting and sectioning is done. Works ok. Uses python's simple threading
+Rev 2.0.1	- Introduced Logging, logging works great. Also introduced RegEx based banned lists
+Rev 2.0.2	- fixed writing the db to a file, added a CLI
+Rev 2.0.3	- created a method to load the database from file, added sorting and sending to users per request
+		  fixed a bug in startup, fixed a recursion problem in user stack, added a get_all method to user
+		  actions, added config options for the database
+Rev 2.0.4	- created a whitelist to handle contractions, other words
+Rev 2.0.5	- fixed a bug where users were not removed on a websocket closed, fixed a nullstring bug
+Rev 2.0.6	- added 'view log' to command structure, added realtime mode for some commands
+Rev 2.0.7	- added a 'view status' option, added status messages to support the new command, added some 
+		  seperation in the realtime command, fixed a realtime output error, added non-persistent stats
+		  *NOTE Sessions stat is broken currently.
+Rev 2.0.8	- fixed sessions stat, added '?' and 'clear' to commands
